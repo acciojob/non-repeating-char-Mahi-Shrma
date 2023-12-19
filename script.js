@@ -6,7 +6,7 @@ function firstNonRepeatedChar(str) {
 // 		   return num[i];
 //   }
 // }
-// 	return null;
+	// return null;
 	for(let i=0;i<str.length;i++){
 		let char=str[i];
 		if(str.indexOf(char)===i && str.indexOf(char,i+1)===-1){
@@ -14,6 +14,8 @@ function firstNonRepeatedChar(str) {
 		}
 	}
 	return null;
+	console.log(firstNonRepeatedChar('aabbcdd'));
+console.log(firstNonRepeatedChar('aabbcc'));
 }
 }
 const input = prompt("Enter a string");
